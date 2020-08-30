@@ -1,7 +1,8 @@
 typical output, showing that btc seems to have much more upside in
 exchange for just a little bit more downside, with s&p500's 25% loss
 at the 5'th percentile, whereas for btc it's at 10'th, just 5% more
-likely; worst losses (71% and 84%) are comparable:
+likely; worst losses (71% and 84%) are comparable. of course, the
+future will be different from the past!
 
 ```
 sp500 data from 1927-12-30 to 2020-08-28:
