@@ -50,7 +50,7 @@ func LoadCSV(file string, day, price int) (*Prices, error) {
 			continue
 		}
 		day := r[day]
-		t, err := time.Parse("2006-01-02", day)
+		t, err := time.Parse(iso, day)
 		if err != nil {
 			return nil, err
 		}
@@ -64,6 +64,8 @@ func LoadCSV(file string, day, price int) (*Prices, error) {
 	return &p, nil
 }
 
+const iso = "2006-01-02"
+
 func main() {
 	const (
 		day  = 24 * time.Hour
@@ -74,7 +76,7 @@ func main() {
 		prices, err := g()
 		check(err)
 		t0, latest := prices.Range()
-		fmt.Printf("%s data from %v to %v\n", name, t0, latest)
+		fmt.Printf("%s data from %s to %s\n", name, t0.Format(iso), latest.Format(iso))
 		max := latest.Add(-year)
 		var returns []float64
 		for {

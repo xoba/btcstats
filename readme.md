@@ -1,7 +1,7 @@
 typical output:
 
 ```
-sp500 data from 1927-12-30 00:00:00 +0000 UTC to 2020-08-28 00:00:00 +0000 UTC
+sp500 data from 1927-12-30 to 2020-08-28
     0'th percentile return:   -71%
     5'th percentile return:   -25%
    10'th percentile return:   -17%
@@ -23,7 +23,7 @@ sp500 data from 1927-12-30 00:00:00 +0000 UTC to 2020-08-28 00:00:00 +0000 UTC
    90'th percentile return:   +30%
    95'th percentile return:   +38%
   100'th percentile return:  +169%
-btc data from 2014-12-01 00:00:00 +0000 UTC to 2020-08-29 00:00:00 +0000 UTC
+btc data from 2014-12-01 to 2020-08-29
     0'th percentile return:   -84%
     5'th percentile return:   -60%
    10'th percentile return:   -25%
