@@ -1,7 +1,10 @@
-typical output:
+typical output, showing that btc seems to have much more upside in
+exchange for just a little bit more downside, with s&p500's 25% loss
+at the 5'th percentile, whereas for btc it's at 10'th, just 5% more
+likely; worst losses *71% and 84%) are comparable:
 
 ```
-sp500 data from 1927-12-30 to 2020-08-28
+sp500 data from 1927-12-30 to 2020-08-28:
     0'th percentile return:   -71%
     5'th percentile return:   -25%
    10'th percentile return:   -17%
@@ -23,7 +26,8 @@ sp500 data from 1927-12-30 to 2020-08-28
    90'th percentile return:   +30%
    95'th percentile return:   +38%
   100'th percentile return:  +169%
-btc data from 2014-12-01 to 2020-08-29
+
+btc data from 2014-12-01 to 2020-08-29:
     0'th percentile return:   -84%
     5'th percentile return:   -60%
    10'th percentile return:   -25%

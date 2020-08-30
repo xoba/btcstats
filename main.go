@@ -76,7 +76,7 @@ func main() {
 		prices, err := g()
 		check(err)
 		t0, latest := prices.Range()
-		fmt.Printf("%s data from %s to %s\n", name, t0.Format(iso), latest.Format(iso))
+		fmt.Printf("%s data from %s to %s:\n", name, t0.Format(iso), latest.Format(iso))
 		max := latest.Add(-year)
 		var returns []float64
 		for {
@@ -102,6 +102,7 @@ func main() {
 				returns[index],
 			)
 		}
+		fmt.Println()
 	}
 	run("sp500", LoadSP500)
 	run("btc", LoadBTC)
